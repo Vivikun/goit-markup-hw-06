@@ -64,12 +64,40 @@
       <section class="hedline-button">
         <div class="container">
           <h1 class="headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button modal-winow" type="button" data-modal-open>
+          <button class="button" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
         <div class="background is-hidden" data-modal>
           <div class="backdrop">
+            <form class="form" name="Nazwa">
+              <fieldset class="form-legend">
+                <legend class="modal-window">
+                  Zostaw swoje dane w formularzu poniżej
+                </legend>
+                <label class="input-name">
+                  Imie
+                  <input type="text" name="Name" max="12" />
+                </label>
+                <label class="input-telephone">
+                  Telefon
+                  <input type="tel" name="telephone" />
+                </label>
+                <label class="input-email">
+                  Email
+                  <input name="Email" type="email" />
+                </label>
+                <label class="input-text">
+                  Komentarz
+                  <input name="text" type="text" max="200" />
+                </label>
+              </fieldset>
+              <label class="label-politics">
+                Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+              </label>
+              <button class="button-from">Wyślij</button>
+            </form>
+
             <button class="modal" type="button" data-modal-close>
               <svg width="11px" height="11px">
                 <use
