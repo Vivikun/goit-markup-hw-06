@@ -70,30 +70,35 @@
         </div>
         <div class="background is-hidden" data-modal>
           <div class="backdrop">
-            <form class="form" name="Nazwa">
-              <fieldset class="form-legend">
-                <legend class="modal-window">
-                  Zostaw swoje dane w formularzu poniżej
-                </legend>
-                <label class="input-name">
-                  Imie
-                  <input type="text" name="Name" max="12" />
-                </label>
-                <label class="input-telephone">
-                  Telefon
-                  <input type="tel" name="telephone" />
-                </label>
-                <label class="input-email">
-                  Email
-                  <input name="Email" type="email" />
-                </label>
-                <label class="input-text">
-                  Komentarz
-                  <input name="text" type="text" max="200" />
-                </label>
-              </fieldset>
+            <form class="form-legend">
+              <label class="modal-window">
+                Zostaw swoje dane w formularzu poniżej
+              </label>
+              <label class="input-name">
+                Imie
+                <input type="text" name="Name" max="12" />
+              </label>
+              <label class="input-telephone">
+                Telefon
+                <input type="tel" name="telephone" />
+              </label>
+              <label class="input-email">
+                Email
+                <input name="Email" type="email" />
+              </label>
+              <label class="input-text">
+                Komentarz
+                <input name="text" type="text" max="200" />
+              </label>
               <label class="label-politics">
-                Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+                <svg class="label-svg-from" width="16px" height="15px">
+                  <use
+                    href="./images/icons.svg/icon praca 6.svg#icon-wskaznik"
+                  ></use>
+                </svg>
+                Oświadczam iż akceptuję
+                <a class="link-underscore" href=""> Regulamin</a> i
+                <a class="link-underscore" href=""> Politykę Prywatności.</a>
               </label>
               <button class="button-from">Wyślij</button>
             </form>

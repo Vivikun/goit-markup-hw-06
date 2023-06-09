@@ -85,20 +85,74 @@ section {
   border-radius: 4px;
   animation: animate 3000ms 0 1000ms;
 }
-.form {
+
+.form-legend {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  left: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
 }
+.modal-window {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-.form-legend {
+  color: #212121;
+}
+.input-name {
+  position: absolute;
   width: 448px;
-  height: 23px;
+  height: 40px;
+  left: 40px;
+  top: 93px;
+
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .label-politics {
-  position: relative;
+  position: absolute;
   width: 420px;
   height: 24px;
+  bottom: 120px;
+  left: 54px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
+.label-svg-from {
+  background: #2196f3;
+  border-radius: 2px;
+  fill: var(--color-text);
+  margin-right: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  /* identical to box height, or 171% */
+  color: var(--color);
+  letter-spacing: 0.03em;
+}
+.link-underscore {
+  text-decoration: underline;
+  margin-left: 3px;
+  margin-right: 3px;
+  color: var(--color);
+}
+
 .button-from {
   position: absolute;
   bottom: 40px;
@@ -117,10 +171,12 @@ section {
   letter-spacing: 0.06em;
   color: var(--color-text);
   cursor: pointer;
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--animation);
   &:hover,
   &:focus {
     color: var(--color-body);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -148,15 +204,11 @@ section {
   border: 1px solid rgba(15, 10, 10, 0.1);
   background: var(--color-text);
   cursor: pointer;
-}
-.modal:focus {
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.modal:hover {
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:focus,
+  &:hover {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
 .is-hidden {
