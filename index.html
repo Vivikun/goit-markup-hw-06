@@ -71,29 +71,92 @@
         <div class="background is-hidden" data-modal>
           <div class="backdrop">
             <form class="form-legend">
-              <label class="modal-window">
-                Zostaw swoje dane w formularzu poniżej
-              </label>
-              <label class="input-name">
-                Imie
-                <input type="text" name="Name" max="12" />
-              </label>
-              <label class="input-telephone">
-                Telefon
-                <input type="tel" name="telephone" />
-              </label>
-              <label class="input-email">
-                Email
-                <input name="Email" type="email" />
-              </label>
-              <label class="input-text">
-                Komentarz
-                <input name="text" type="text" max="200" />
-              </label>
+              <div
+                class="modal-window"
+                role="group"
+                aria-labelledby="main-header"
+              >
+                <p id="main-header">Zostaw swoje dane w formularzu poniżej</p>
+              </div>
+              <fieldset class="group-form">
+                <label class="label-input-name">
+                  Imie
+                  <div
+                    class="label-text"
+                    role="group"
+                    aria-labelledby="input-name"
+                  >
+                    <input
+                      id="input-text"
+                      class="input-name"
+                      name="Name"
+                      minlength="2"
+                      mixlength="25"
+                    />
+                    <svg class="svg-name" width="12px" height="12px">
+                      <use
+                        href="./images/icons.svg/icon praca 6.svg#icon-Imie"
+                      ></use>
+                    </svg>
+                  </div>
+                </label>
+                <label class="label-input-name">
+                  Telefon
+                  <div
+                    class="label-text"
+                    role="group"
+                    aria-labelledby="input-name"
+                  >
+                    <input
+                      id="input-name"
+                      class="input-name"
+                      type="tel"
+                      name="phone_number"
+                      minlength="8"
+                      maxlength="9"
+                    />
+                    <svg class="svg-name" width="12px" height="12px">
+                      <use
+                        href="./images/icons.svg/icon praca 6.svg#icon-phone"
+                      ></use>
+                    </svg>
+                  </div>
+                </label>
+                <label class="label-input-name">
+                  Email
+                  <div
+                    class="label-text"
+                    role="group"
+                    aria-labelledby="input-name"
+                  >
+                    <input
+                      id="input-name"
+                      class="input-name"
+                      name="Email"
+                      type="mail"
+                    />
+                    <svg class="svg-name" width="12px" height="12px">
+                      <use
+                        href="./images/icons.svg/icon praca 6.svg#icon-email"
+                      ></use>
+                    </svg>
+                  </div>
+                </label>
+                <label class="label-input-name">
+                  Komentarz
+                  <textarea
+                    class="input-name-text"
+                    placeholder="Wprować tekst"
+                    name="Komentarz"
+                    rows="6"
+                  ></textarea>
+                </label>
+              </fieldset>
               <label class="label-politics">
-                <svg class="label-svg-from" width="16px" height="15px">
+                <input class="input-button" type="button" />
+                <svg class="label-svg" width="16px" height="15px">
                   <use
-                    href="./images/icons.svg/icon praca 6.svg#icon-wskaznik"
+                    href="/images/icons.svg/icon praca 6.svg#icon-wskaznik"
                   ></use>
                 </svg>
                 Oświadczam iż akceptuję
