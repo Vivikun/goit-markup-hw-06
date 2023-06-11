@@ -1,7 +1,7 @@
 /* WebStudio */
 body {
   color: #212121;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
@@ -180,28 +180,43 @@ section {
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: #757575;
+  .input-button {
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    margin-right: 7px;
+    &hover,
+    &focus {
+      color: var(--color);
+    }
+  }
+}
+.input-button,
+.label-svg::after {
+  border-radius: 2px;
+  content: '';
+  margin-right: 7px;
+  background: var(--color);
+  fill: var(--color-text);
+}
+.input-button,
+.label-svg::before {
+  content: '';
+  margin-right: 7px;
+  border-radius: 2px;
+  background: var(--color-text);
+  fill: var(--color-text);
 }
 .label-svg {
   position: absolute;
+  background: var(--color);
   fill: var(--color-text);
-  &:focus,
-  &:hover {
-    background: #2196f3;
-    border-radius: 2px;
-  }
-}
-.input-button {
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
+  border-radius: 2px;
   &:hover,
-  &:focus {
-    background: var(--color-text);
-    border-radius: 2px;
-    fill: var(--color-text);
+  &focus {
+    fill: var(--color);
   }
 }
-
 .label-svg-from {
   background: #2196f3;
   border-radius: 2px;
@@ -216,11 +231,14 @@ section {
 }
 
 .link-underscore {
-  text-decoration: underline;
-  margin-left: 3px;
-  margin-right: 3px;
-  color: var(--color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
 }
+
 .group-form {
   width: 448px;
   height: 342px;
@@ -528,7 +546,7 @@ section {
         position: absolute;
         bottom: -33px;
         left: 0;
-        content: "";
+        content: '';
         width: 100%;
         height: 4px;
         background: var(--color);
@@ -537,20 +555,6 @@ section {
     }
   }
 }
-
-.link {
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  transition-property: color;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--animation);
-}
-
 .list-mail {
   display: flex;
   gap: 50px;
@@ -564,7 +568,7 @@ section {
 .logo {
   text-decoration: none;
   color: inherit;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -645,7 +649,7 @@ section {
 }
 
 .button {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -825,7 +829,7 @@ section {
 }
 
 .logo-0 {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
@@ -855,7 +859,7 @@ section {
 }
 
 .button-1 {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
