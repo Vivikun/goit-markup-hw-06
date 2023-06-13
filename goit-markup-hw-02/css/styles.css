@@ -191,6 +191,7 @@ section {
     }
   }
 }
+
 .input-button,
 .label-svg::after {
   border-radius: 2px;
@@ -199,6 +200,7 @@ section {
   background: var(--color);
   fill: var(--color-text);
 }
+
 .input-button,
 .label-svg::before {
   content: '';
